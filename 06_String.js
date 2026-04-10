@@ -29,3 +29,28 @@ const url = "https://suraj.com/suraj%50Satmohankar"
 console.log(url.replace("%50",'-'));
 
 console.log(gameName.split('-'));
+
+const balance = new Number(100);
+console.log(balance);
+
+console.log(balance.toString().length);
+console.log(balance.toFixed(1))
+
+const otherName = 123.8943;
+console.log(otherName.toPrecision(4))
+
+console.log(Math);
+console.log(Math.abs(-44))
+console.log(Math.round(4.66));
+
+console.log(Math.max(12,23,43,3,-2))
+console.log(Math.min(12,23,43,3,-2))
+
+// Math.random()  --> always give value from 0 to 1.
+console.log((Math.random()*10)+1);
+console.log(Math.floor(Math.random()*10)+1);
+
+const min = 10;
+const max = 20;
+
+console.log(Math.floor(Math.random()*(max - min + 1)+ min))
