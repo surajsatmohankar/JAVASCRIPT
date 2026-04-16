@@ -3,7 +3,7 @@ const tinderUser = {};
 
 tinderUser.id = 123;
 tinderUser.name = "Suraj";
-tinderUser.isLoggedIn = false;
+tinderUser.isLoggedIn = true;
 tinderUser.isSuccessful = true;
 
 console.log(tinderUser);
@@ -35,5 +35,26 @@ const obj3 = {5: "E", 6: "F", 7: "G"};
 // const obj4 = Object.assign({}, obj1, obj2, obj3); // Object.assign() method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It returns the target object.
 // console.log(obj4);
 
-const obj4 = {...obj1, ...obj2, ...obj3}; // spread operator is used to copy the values of all enumerable own properties from one or more source objects to a target object. It returns the target object.
-console.log(obj4);
+const obj4 = {8: "H", 9: "I", 10: "J"};
+
+const obj5 = {...obj1, ...obj2, ...obj3, ...obj4}; // spread operator is used to copy the values of all enumerable own properties from one or more source objects to a target object. It returns the target object.
+// console.log(obj5);
+
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+console.log(Object.hasOwnProperty.call(tinderUser, "isSuccessful")); // Object.hasOwnProperty() method returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it). It returns true if the object has the specified property, and false otherwise.
+
+const course = {
+    courseName : "JavaScript",
+    courseDuration : "3 months",
+    courseInstructor : "Suraj"
+}
+
+console.log(course.courseName);
+// console.log(course["courseInstructor"]);
+
+const {courseDuration} = course; // destructuring assignment is a syntax that allows you to unpack values from arrays, or properties from objects, into distinct variables.
+console.log(courseDuration);
