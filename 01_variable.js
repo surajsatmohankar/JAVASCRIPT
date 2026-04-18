@@ -8,5 +8,5 @@ accountEmail = "HDFC@Gmail.com"
 accountPassword = "124567"
 accountCity = "Bengaluru"
 console.log(accountCity);
-console.table([accountEmail,accountId,accountCity,accountPassword
-]); 
+console.table([accountEmail,accountId, accountCity,accountPassword]); 
+console.log(typeof accountCity);

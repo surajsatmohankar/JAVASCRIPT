@@ -7,6 +7,9 @@ let myObj = {
     hobbies : "Dance"
 }
 
+JSON.stringify(myObj) // convert object into string
+console.log(JSON.stringify(myObj));
+
 console.log(myObj);
 console.table([heroes,myObj]);
 
@@ -22,14 +25,24 @@ console.log(anothername)
 
 let userOne ={
     email :"user@yml.com",
-    upi : "user@ybl"
+   upi : "user@ybl"
 
 }
 
 let userTwo = userOne;
 
-userTwo.email = "maheshsawant.com"
+userOne.email = "maheshsawant.com"
 
 console.log(userOne.email);
 console.log(userTwo.email);
 
+const heroe11 = ["shaktiman", "naagraj", "doga", "Kilvish"];
+
+let myObj11 = {
+    heroe11,
+    name : "hitesh",
+    age : 31,
+    hobbies : "Dance"
+}
+
+console.log(myObj11);

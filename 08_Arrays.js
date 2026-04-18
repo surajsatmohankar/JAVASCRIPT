@@ -18,9 +18,9 @@ console.log(myArr);
 myArr.shift(); // shift method removes the first element of the array and shifts all the other elements to the left.
 // console.log(myArr);
 
-let newArr = myArr.join();
+let newArr = myArr.join(); // join method converts the array into a string and it takes one parameter which is the separator. If we do not pass any parameter, it will use comma as a separator.
 console.log(myArr);
-console.log(newArr);
+console.log("new Array is " ,newArr);
 console.log(typeof newArr);
 
 // slice and splice method
@@ -46,7 +46,7 @@ const Heroes = ["Superman", "Batman", "Spiderman", "Ironman", "Thor"];
 const Villains = ["Joker", "Lex Luthor", "Green Goblin", "Thanos", "Loki"];
 
 // Heroes.push(Villains);
-// console.log(Heroes);
+// console.log("my new Heroes" , Heroes);
 
 // console.log(Heroes[5][1]);
 
@@ -54,7 +54,7 @@ const Villains = ["Joker", "Lex Luthor", "Green Goblin", "Thanos", "Loki"];
 // console.log(All_Heroes); // push method returns the new length of the array after adding the new element.
 
 const All_Heroes1 = Heroes.concat(Villains); // concat method does not change the original array and it returns a new array with the combined elements of both arrays.
-console.log(All_Heroes1);
+console.log("all elements in All_Heroes1:", All_Heroes1);
 // console.log(Heroes); // concat method does not change the original array and it returns a new array with the combined elements of both arrays.
 
 
@@ -65,12 +65,12 @@ console.log(All_Heroes2);
 const nested_Array  = [1,2,3,[4,5,6],7,[9,[10,"Mayur", "sweety", "Suraj"],11],12];
 
 const simpleArray = nested_Array.flat(Infinity);// flat method is used to flatten the nested array and it takes one parameter which is the depth of the array. If we pass Infinity as a parameter, it will flatten the array completely.
-console.log(simpleArray);
+console.log("this is simple array:", simpleArray);
 
-console.log(Array.from("Suraj"));
+console.log("finding Suraj ", Array.from("Suraj")); // Array.from() method creates a new array from an array-like or iterable object. In this case, we are passing a string "Suraj" which is an iterable object and it will create an array of characters from the string.
 let score1 = [1,2,3,4,5];
 let score2 = [6,7,8,9,10];
 let score3 = ["Saniya", "Mayur", "Sweety", "Suraj"];
-console.log(Array.of(score1, score2, score3));
+console.log("Array.of() method:", Array.of(score1, score2, score3)); // Array.of() method creates a new array from the given arguments. In this case, we are passing three arrays as arguments and it will create a new array with these three arrays as elements.
 const new_Array = Array.of(score1, score2, score3);
-console.log(new_Array.flat(Infinity));
+console.log("Flattened array:", new_Array.flat(Infinity));

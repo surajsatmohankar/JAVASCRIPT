@@ -5,14 +5,13 @@ console.log(myDates.toLocaleDateString());
 console.log(myDates.getDate());
 console.log(typeof myDates);
 
-
 let createdDate = new Date(2024, 5, 20);
-console.log(createdDate);
-console.log(createdDate.toString());
+console.log("createdDate:", createdDate);
+console.log("createdDate In string ", createdDate.toString());
 
 let createdNewDate = new Date("2024, 5, 20");
-console.log(createdNewDate);
-console.log(createdNewDate.toString());
+console.log("createdNewDate:", createdNewDate);
+console.log("createdNewDate In string ", createdNewDate.toString());
 
 let myTimeStamp = Date.now();
 // console.log(mytimeStamp);

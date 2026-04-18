@@ -15,14 +15,14 @@ const user = {
     getScore : function(){
         return this.score;
     }
-    
 }
+
 console.log(user);
 console.log(user.isloggedIn, user.lastLoginDays);
 console.log(user["full Name"]);
 
 
-console.log(user["score"]);
+console.log("my user score:", user["score"]);
 console.log(user[mySym]);
 
 console.log(typeof mySym); // to access the value of the symbol key we have to use the square bracket notation and pass the symbol key as an argument.
@@ -43,7 +43,3 @@ user.greetingTwo = function(){
 
 console.log(user.greeting());
 console.log(user.greetingTwo());
-
-
-
-
