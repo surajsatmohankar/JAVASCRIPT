@@ -35,7 +35,32 @@ function addOne(num){
     return num+ 1;
 }
 
-console.log(addTwo(5)); // 7
+
 const addTwo = function addTwo(num){
     return num+2;
 }
+console.log(addTwo(5)); // 7
+
+
+const user = {
+    username  : "Mahesh",
+    price : 12345,
+
+    welcomeMessage : function(){
+        console.log(`${this.username} , welcome to website`);
+        console.log(this.price);
+        console.log(this);
+    }
+}
+
+// user.welcomeMessage();
+// user.username = "Naresh";
+// user.welcomeMessage();
+console.log(this);
+
+
+function chai(){
+    console.log(this);
+    
+}
+chai();
