@@ -87,7 +87,17 @@ const myCodding =[
     
 ]
 
-myCodding.forEach((item)=>{
-    console.log(item.languagfile);
+// myCodding.forEach((item)=>{
+//     console.log(item.languagfile);
     
+// })
+
+
+const codingLang = ["JavaScript", "Python", "Java", "C++"];
+
+const values = codingLang.forEach( (item) =>{
+    console.log(item);
 })
+
+console.log(values); //undefined because forEach loop does not return anything it just executes the callback function for each element in the array but it does not return anything so it will give undefined when we try to assign it to a variable or log it to the console
+
