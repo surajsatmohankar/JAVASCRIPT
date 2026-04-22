@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Dom</title>
+</head>
+<body style="background-color: #212121; color: #ffff;">
+    <!-- <div class="parent">
+        <div class="child">Child 1</div>
+        <div class="child">Child 2</div>
+        <div class="child">Child 3</div>
+    </div> -->
+</body>
+<script>
+    const div = document.createElement('div');
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title", "Ths is the title for the div");
+    div.style.backgroundColor = "green";
+    div.style.padding = "20px";
+    // div.innerText = "this is the real Dom"
+    const addText = document.createTextNode("This is the real Dom");
+    div.appendChild(addText);
+    document.body.appendChild(div);
+</script>
+</html>
