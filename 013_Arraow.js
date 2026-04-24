@@ -42,7 +42,7 @@ chai();
 
 
 const addTwo =(num1, num2) =>{ 
-    return num1 + num2;
+    return num1 + num2;     // if you want to use return word then use this {} and if you dont want to use return word then use () like this - (num1 + num2)
 }
 
 

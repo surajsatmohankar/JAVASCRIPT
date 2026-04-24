@@ -31,3 +31,38 @@ switch (month) {
     default:
         break;
 }
+
+
+//FALSY VALUES  and Truthy values
+const username = []
+
+if(username){
+    console.log("user has valid Email"); // ye run hota hai because [] consider as value
+     
+}else{
+    console.log("user has no Email");
+    
+}
+
+//false, 0, -0, BigInt 0n, "" , null, undefined, NaN
+
+//truthy value
+//"0", "false" , 'false' " ", {}
+
+// Nullish coalescing Opeator (??): null undefined
+
+let val1;
+// val1 = 5 ?? 10;
+// val1 = null ?? 10
+// val1 = undefined ?? 16
+val1 = null ?? 10 ?? 20
+
+console.log(val1);
+
+//Ternary oprator
+
+const username2 = "Shahid"
+  if(username2){
+    username2 == "Shahid" ? console.log("Winner" ) :
+    console.log("Try Another game")
+  }
