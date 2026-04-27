@@ -78,7 +78,7 @@ function newGame() {
     randomNumber = parseInt(Math.random() * 100 + 1);
     prevGuess = [];
     numGuess = 1;
-    playGame = true;,
+    playGame = true;
     guessSlot.innerHTML = '';
     remaining.innerHTML = '10';
     lowOrHi.innerHTML = '';
